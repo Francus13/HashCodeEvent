@@ -1,26 +1,25 @@
 #Initializing data
 with open('a_example.txt', 'r') as f:
     data = f.read()
+o = open('output.txt', 'w')
 
-print(data)
 lines = data.split('\n')
-print(lines)
 
 totalBooks = lines[0][0]
 totalLibraries = lines[0][1]
 totalDays = lines[0][2]
 
+answer = ''
 #compute scores
 def computeLibraryScore(l,d):
     
-daysRemaining = totalDays
+# ALL ALGORITHM WORK GOES HERE
+
+libraryScore = computeLibraryScore(library, daysAvailable)
 
 
-#libraryScore = computeLibraryScore(library, daysAvailable)
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
+#writing the output file
+o.write(answer)
+f.close()
+o.close()
 
